@@ -1,2 +1,9 @@
-# EngineeringOchestration_Seohee_Songbook
-Musical Song Book
+# 서희, 새벽빛
+
+공연 가사집의 암호화된 배포 파일입니다.
+
+가사집은 공연 QR 또는 별도로 전달받은 열람 링크에서 열 수 있습니다. 이 저장소에는 열람용 키와 가사 원문을 넣지 않습니다.
+
+게시: GitHub Pages에서 main 브랜치의 /(root)를 선택합니다.
+
+원문 수정과 열람 링크 관리는 소유자가 보관한 관리자용 원본에서 진행합니다.
