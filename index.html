@@ -300,7 +300,7 @@ function decode64(value){return Uint8Array.from(atob(value),c=>c.charCodeAt(0));
 async function unlockSongbook(){
   const status=document.getElementById('lock-status');
   const params=new URLSearchParams(location.hash.slice(1));
-  const access=params.get('access');
+  const access=(params.get('access')||'').replace(/\\+$/,'');
   if(!access||!/^[A-Za-z0-9_-]{43}$/.test(access)){status.textContent='공연 QR을 스캔하거나, 전달받은 가사집 링크로 접속해 주세요.';return;}
   if(!globalThis.crypto?.subtle){status.textContent='이 브라우저에서는 가사집을 열 수 없어요. 최신 Chrome 또는 Safari에서 링크를 열어 주세요.';return;}
   status.textContent='가사집을 여는 중입니다.';
